@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "nativeFigg",
+    "slug": "nativeFigg",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
