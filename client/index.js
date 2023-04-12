@@ -1,12 +1,15 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { registerRootComponent } from "expo";
+import { SocketProvider } from "./src/context/SocketContext";
 
-import App from "./App";
+import App from "./src/App";
 
 const AppWithNavigation = () => (
-  <NavigationContainer>
-    <App />
-  </NavigationContainer>
+  <SocketProvider>
+    <NavigationContainer>
+      <App />
+    </NavigationContainer>
+  </SocketProvider>
 );
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
