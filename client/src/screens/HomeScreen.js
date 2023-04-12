@@ -1,8 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import { Button, StyleSheet, Text, TextInput, View } from "react-native";
+import { useGameState } from "../context/GameContext";
 
 const HomeScreen = ({ navigation }) => {
-  const [name, setName] = useState("");
+  const { name, setName } = useGameState();
   const inputRef = useRef();
 
   const handleSubmit = () => {
